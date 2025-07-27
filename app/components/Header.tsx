@@ -34,6 +34,9 @@ export default function Header() {
             <Link href="/contact" className="text-gray-600 hover:text-blue-600">
               Contact
             </Link>
+            <Link href="/investor" className="text-gray-600 hover:text-blue-600">
+           Investor
+            </Link>
           </nav>
           <div className="flex items-center space-x-4">
             <a
