@@ -23,10 +23,10 @@ export const doctorConfig = {
     "25+ Years Clinical Experience"
   ],
   contact: {
-    phone: "+91-9876543210",
-    email: "dr.surendra@clinic.com", 
-    website: "https://drsurendranehru.com",
-    whatsapp: "+91-9876543210"
+    phone: "+91-9963721999",
+    email: "surendra.muddu@gmail.com" 
+    website: "https://dr-surendra-nehru-virtual-clinic-homa-surendramuddu.replit.app",
+   whatsapp: "+91-9963721999",
   },
   socialMedia: {
     youtube: "https://youtube.com/@dr-surendra-nehru",
