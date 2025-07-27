@@ -42,11 +42,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Key Achievements</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {doctorConfig.achievements.map((achievement, index) => (
+            {doctorConfig?.achievements?.map((achievement, index) => (
               <div key={index} className="bg-blue-50 p-6 rounded-lg text-center">
                 <p className="text-gray-700 font-medium">{achievement}</p>
               </div>
-            ))}
+            )) || (
+              <div className="col-span-full text-center">
+                <p>Loading achievements...</p>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -56,14 +60,18 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {doctorConfig.services.map((service, index) => (
+            {doctorConfig?.services?.map((service, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-3 text-blue-600">
-                  {service.title}
+                  {service?.title || 'Service'}
                 </h3>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-600">{service?.description || 'Description available soon'}</p>
               </div>
-            ))}
+            )) || (
+              <div className="col-span-full text-center">
+                <p>Loading services...</p>
+              </div>
+            )}
           </div>
         </div>
       </section>
