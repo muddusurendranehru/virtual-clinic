@@ -17,7 +17,7 @@ export default function Home() {
               Professional medical consultations with {doctorConfig.name}
             </p>
             <p className="text-lg mb-8">
-              {doctorConfig.title} | {doctorConfig.specialty} | {doctorConfig.experience}
+              {doctorConfig.title} | Internal Medicine Specialist
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -27,51 +27,62 @@ export default function Home() {
                 Book Appointment
               </a>
               <a
-                href="/services"
+                href={`https://wa.me/${doctorConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`}
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
               >
-                Our Services
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Achievements Section */}
+      {/* Key Features Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Key Achievements</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {doctorConfig?.achievements?.map((achievement, index) => (
-              <div key={index} className="bg-blue-50 p-6 rounded-lg text-center">
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {doctorConfig.keyFeatures.map((feature, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-blue-600 text-2xl font-bold">{index + 1}</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Professional Achievements</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {doctorConfig.achievements.map((achievement, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
                 <p className="text-gray-700 font-medium">{achievement}</p>
               </div>
-            )) || (
-              <div className="col-span-full text-center">
-                <p>Loading achievements...</p>
-              </div>
-            )}
+            ))}
           </div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {doctorConfig?.services?.map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+          <div className="grid md:grid-cols-3 gap-6">
+            {doctorConfig.services.map((service, index) => (
+              <div key={index} className="bg-blue-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-3 text-blue-600">
-                  {service?.title || 'Service'}
+                  {service.name}
                 </h3>
-                <p className="text-gray-600">{service?.description || 'Description available soon'}</p>
+                <p className="text-gray-600 mb-4">{service.description}</p>
+                <p className="text-2xl font-bold text-blue-600">{service.price}</p>
               </div>
-            )) || (
-              <div className="col-span-full text-center">
-                <p>Loading services...</p>
-              </div>
-            )}
+            ))}
           </div>
         </div>
       </section>
@@ -90,8 +101,8 @@ export default function Home() {
               <p>{doctorConfig.contact.email}</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Website</h3>
-              <p>{doctorConfig.contact.website}</p>
+              <h3 className="text-xl font-semibold mb-4">WhatsApp</h3>
+              <p>{doctorConfig.contact.whatsapp}</p>
             </div>
           </div>
         </div>
@@ -101,9 +112,11 @@ export default function Home() {
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2025 {doctorConfig.name} - Virtual Medical Clinic</p>
-          <p className="mt-2 text-gray-400">Professional Medical Care | {doctorConfig.specialty}</p>
+          <p className="mt-2 text-gray-400">Professional Medical Care | Internal Medicine</p>
         </div>
       </footer>
     </div>
+  );
+}
   );
 }
