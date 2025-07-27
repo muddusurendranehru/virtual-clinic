@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Investment Opportunity - ₹500+ Crore Healthcare Unicorn | Dr. Muddu
+            Surendra Nehru
+        </title>
+        <meta
+            name="description"
+            content="2024 T-HUB Excellence Award Winner - ₹500+ Crore Healthcare Investment Opportunity. HOMA Healthcare Platform by Dr. Muddu Surendra Nehru"
+        />
+        <meta
+            property="og:title"
+            content="₹500+ Crore Healthcare Investment - Dr. Muddu Surendra Nehru"
+        />
+        <meta
+            property="og:description"
+            content="2024 T-HUB Excellence Award Winner seeking ₹10 Cr investment for global expansion"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://dr-surendra-nehru-virtual-clinic-homa-surendramuddu.replit.app/investor.html"
+        />
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .nav-bar {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                padding: 1rem 0;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 2rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #6366f1;
+                text-decoration: none;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 2rem;
+                list-style: none;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+
+            .nav-links a:hover {
+                color: #6366f1;
+            }
+
+            .back-to-clinic {
+                background: #6366f1;
+                color: white;
+                padding: 0.6rem 1.2rem;
+                border-radius: 20px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: transform 0.3s;
+            }
+
+            .back-to-clinic:hover {
+                transform: translateY(-2px);
+            }
+
+            .hero-section {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 3rem;
+                text-align: center;
+                margin: 2rem 0;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+
+            .award-banner {
+                background: linear-gradient(45deg, #ffd700, #ffa500);
+                color: #000;
+                padding: 1.5rem 2rem;
+                border-radius: 15px;
+                font-weight: bold;
+                font-size: 1.3rem;
+                margin: 1rem 0 2rem 0;
+                border: 3px solid #b8860b;
+                display: inline-block;
+                box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+            }
+
+            .stats-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1.5rem;
+                margin: 3rem 0;
+            }
+
+            .stat-card {
+                background: linear-gradient(135deg, #f0f9ff, #e0e7ff);
+                padding: 2rem;
+                border-radius: 15px;
+                text-align: center;
+                border-left: 4px solid #3b82f6;
+                transition: transform 0.3s ease;
+            }
+
+            .stat-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: #1e40af;
+                margin-bottom: 0.5rem;
+            }
+
+            .stat-label {
+                color: #6b7280;
+                font-weight: 500;
+            }
+
+            .section {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 3rem;
+                margin: 2rem 0;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+                color: #1e40af;
+                text-align: center;
+                margin-bottom: 2rem;
+                border-bottom: 3px solid #3b82f6;
+                padding-bottom: 1rem;
+            }
+
+            .achievement-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .achievement-card {
+                background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+                padding: 2rem;
+                border-radius: 15px;
+                border-left: 5px solid #6366f1;
+                transition: transform 0.3s ease;
+            }
+
+            .achievement-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+
+            .achievement-card h3 {
+                color: #1e40af;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+
+            .demo-section {
+                background: linear-gradient(45deg, #8b5cf6, #7c3aed);
+                color: white;
+                border-radius: 20px;
+                padding: 3rem;
+                margin: 2rem 0;
+                text-align: center;
+                box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+            }
+
+            .demo-button {
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                padding: 1rem 2rem;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 1rem;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+
+            .demo-button:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: translateY(-2px);
+            }
+
+            .revenue-section {
+                background: linear-gradient(45deg, #10b981, #059669);
+                color: white;
+                border-radius: 20px;
+                padding: 3rem;
+                margin: 2rem 0;
+                box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+            }
+
+            .revenue-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 2rem 0;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .revenue-table th,
+            .revenue-table td {
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .revenue-table th {
+                background: rgba(255, 255, 255, 0.2);
+                font-weight: bold;
+            }
+
+            .cta-section {
+                background: linear-gradient(45deg, #ef4444, #dc2626);
+                color: white;
+                border-radius: 20px;
+                padding: 3rem;
+                text-align: center;
+                margin: 2rem 0;
+                box-shadow: 0 20px 40px rgba(239, 68, 68, 0.3);
+            }
+
+            .contact-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+                margin: 2rem 0;
+            }
+
+            .contact-card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 1.5rem;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .contact-card h4 {
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+            }
+
+            .contact-card p {
+                margin: 0.5rem 0;
+            }
+
+            .advantages-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                margin: 2rem 0;
+                text-align: center;
+            }
+
+            .advantage-item {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 1rem;
+                border-radius: 10px;
+                font-weight: 500;
+            }
+
+            .highlight-box {
+                background: linear-gradient(45deg, #fef3c7, #fde68a);
+                border: 3px solid #f59e0b;
+                padding: 2rem;
+                border-radius: 15px;
+                margin: 2rem 0;
+                text-align: center;
+            }
+
+            .highlight-box h3 {
+                color: #92400e;
+                margin-bottom: 1rem;
+            }
+
+            .highlight-box p {
+                color: #7c2d12;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
+            ul {
+                padding-left: 1.5rem;
+            }
+
+            li {
+                margin: 0.5rem 0;
+            }
+
+            .emoji {
+                font-size: 1.2em;
+            }
+
+            @media (max-width: 768px) {
+                .nav-links {
+                    display: none;
+                }
+
+                .container {
+                    padding: 1rem;
+                }
+
+                .hero-section,
+                .section {
+                    padding: 2rem;
+                }
+
+                .stats-container {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .award-banner {
+                    font-size: 1.1rem;
+                    padding: 1rem;
+                }
+
+                .section-title {
+                    font-size: 1.8rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <a href="/" class="logo"
+                    ><span class="emoji">🏥</span> HOMA Healthcare</a
+                >
+                <ul class="nav-links">
+                    <li><a href="/">Virtual Clinic</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#investment">Investment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="/" class="back-to-clinic"
+                    ><span class="emoji">🏥</span> View Live Platform</a
+                >
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="award-banner">
+                    <span class="emoji">🏆</span> 2024 T-HUB EXCELLENCE AWARD
+                    WINNER <span class="emoji">🏆</span><br />
+                    ENDOCRINOLOGIST & DIABETOLOGIST EXCELLENCE AWARDS
+                </div>
+
+                <h1
+                    style="
+                        font-size: 2.8rem;
+                        color: #1e40af;
+                        margin-bottom: 1rem;
+                    "
+                >
+                    <span class="emoji">💰</span> ₹500+ CRORE UNICORN INVESTMENT
+                    OPPORTUNITY
+                </h1>
+
+                <h2
+                    style="
+                        color: #6366f1;
+                        margin-bottom: 1rem;
+                        font-size: 1.8rem;
+                    "
+                >
+                    Dr. Muddu Surendra Nehru - Award-Winning Medical Pioneer
+                </h2>
+
+                <p
+                    style="
+                        font-size: 1.3rem;
+                        margin-bottom: 2rem;
+                        color: #6b7280;
+                    "
+                >
+                    <strong
+                        ><span class="emoji">🥇</span> FIRST INDIAN
+                        DOCTOR</strong
+                    >
+                    to pioneer HOMA-Insulin Resistance-Diabetes Emission-Beta
+                    Cell Research Recovery
+                </p>
+
+                <p style="font-size: 1.1rem; color: #6b7280">
+                    <span class="emoji">📱</span> +91-09963721999 |
+                    <span class="emoji">🌐</span> www.homahealthcare.in
+                </p>
+            </div>
+
+            <!-- Key Statistics -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">₹500+Cr</div>
+                    <div class="stat-label">Revenue Potential</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">₹10Cr</div>
+                    <div class="stat-label">Investment Seeking</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Target Clinics</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-label">Doctor Followers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Medical Colleges</div>
+                </div>
+            </div>
+
+            <!-- Live Platform Demo -->
+            <div class="demo-section">
+                <h2 style="margin-bottom: 1rem">
+                    <span class="emoji">🚀</span> LIVE WORKING DEMONSTRATION
+                </h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem">
+                    Experience the complete platform in action - Real patients,
+                    real payments, real results!
+                </p>
+
+                <div
+                    style="
+                        background: rgba(255, 255, 255, 0.2);
+                        padding: 1.5rem;
+                        border-radius: 15px;
+                        margin: 2rem 0;
+                    "
+                >
+                    <h3 style="margin-bottom: 1rem">
+                        <span class="emoji">🎯</span> CURRENT WORKING PLATFORM:
+                    </h3>
+                    <p style="font-size: 1.1rem; word-break: break-all">
+                        https://dr-surendra-nehru-virtual-clinic-homa-surendramuddu.replit.app/
+                    </p>
+                </div>
+
+                <a href="/" class="demo-button"
+                    ><span class="emoji">🏥</span> Experience Live Platform</a
+                >
+                <a href="https://www.homahealthcare.in" class="demo-button"
+                    ><span class="emoji">🌐</span> Main Website</a
+                >
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="section" id="achievements">
+                <h2 class="section-title">
+                    <span class="emoji">🏆</span> UNPRECEDENTED ACHIEVEMENTS
+                </h2>
+
+                <div class="achievement-grid">
+                    <div class="achievement-card">
+                        <h3>
+                            <span class="emoji">🏆</span> Industry Recognition
+                        </h3>
+                        <ul>
+                            <li>2024 T-HUB Excellence Award Winner</li>
+                            <li>Sponsored by YES BANK, Audi Hyderabad</li>
+                            <li>Corporate validation from major brands</li>
+                            <li>Celebrity network connections</li>
+                            <li>High-profile industry events</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h3>
+                            <span class="emoji">🔬</span> Medical Research
+                            Pioneer
+                        </h3>
+                        <ul>
+                            <li>FIRST INDIAN HOMA-Diabetes Research Pioneer</li>
+                            <li>10+ ICMR Research Projects mentor</li>
+                            <li>Research across 3 Medical Colleges</li>
+                            <li>Published in indexed medical journals</li>
+                            <li>Guide & Examiner for medical students</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h3><span class="emoji">📺</span> Digital Authority</h3>
+                        <ul>
+                            <li>YouTube: 1500+ Doctor Followers</li>
+                            <li>1500+ Patient Education Series</li>
+                            <li>100+ Medical Training Presentations</li>
+                            <li>Global Zoom Classes worldwide</li>
+                            <li>Industry-proven content strategy</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h3>
+                            <span class="emoji">🏥</span> Clinical Excellence
+                        </h3>
+                        <ul>
+                            <li>20+ Years successful operations</li>
+                            <li>Multiple establishments in Hyderabad</li>
+                            <li>Proven healthcare business model</li>
+                            <li>12 Medical College network</li>
+                            <li>Award-winning medical practice</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h3>
+                            <span class="emoji">💻</span> Technology Innovation
+                        </h3>
+                        <ul>
+                            <li>Complete AI Healthcare Platform (LIVE)</li>
+                            <li>Real patients and payments</li>
+                            <li>AI Medical Analysis systems</li>
+                            <li>Automated workflows</li>
+                            <li>Scalable multi-clinic platform</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h3><span class="emoji">🌍</span> Global Impact</h3>
+                        <ul>
+                            <li>Pan-world medical education</li>
+                            <li>International research collaboration</li>
+                            <li>Cross-cultural healthcare solutions</li>
+                            <li>Global scaling potential</li>
+                            <li>Medical authority recognition</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Opportunity -->
+            <div class="revenue-section" id="investment">
+                <h2 style="text-align: center; margin-bottom: 2rem">
+                    <span class="emoji">💰</span> ₹500+ CRORE REVENUE
+                    OPPORTUNITY
+                </h2>
+
+                <table class="revenue-table">
+                    <thead>
+                        <tr>
+                            <th>Revenue Stream</th>
+                            <th>Amount (₹)</th>
+                            <th>Scale</th>
+                            <th>Annual Revenue (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Premium Setup Fee</td>
+                            <td>75,000</td>
+                            <td>5000 clinics</td>
+                            <td>37.5 Crores</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly SaaS</td>
+                            <td>15,000</td>
+                            <td>5000 clinics</td>
+                            <td>90 Crores/year</td>
+                        </tr>
+                        <tr>
+                            <td>Transaction Commission</td>
+                            <td>10%</td>
+                            <td>High volume</td>
+                            <td>50+ Crores/year</td>
+                        </tr>
+                        <tr
+                            style="
+                                background: rgba(255, 255, 255, 0.2);
+                                font-weight: bold;
+                            "
+                        >
+                            <td colspan="3">
+                                <strong>TOTAL POTENTIAL</strong>
+                            </td>
+                            <td><strong>500+ CRORES</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="text-align: center; margin: 2rem 0">
+                    <span class="emoji">🎯</span> COMPETITIVE ADVANTAGES
+                </h3>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <span class="emoji">🏆</span> T-HUB Award Winner
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">🥇</span> First Indian HOMA Pioneer
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">📺</span> 1500+ Doctor Following
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">🎓</span> 12 Medical Colleges
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">🔬</span> 10+ ICMR Projects
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">🏥</span> 20+ Years Business
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">🌟</span> Celebrity Network
+                    </div>
+                    <div class="advantage-item">
+                        <span class="emoji">💻</span> Complete Tech Platform
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment CTA -->
+            <div class="cta-section" id="contact">
+                <h2 style="margin-bottom: 2rem">
+                    <span class="emoji">🚀</span> UNICORN INVESTMENT OPPORTUNITY
+                </h2>
+                <p style="font-size: 1.4rem; margin: 1rem 0">
+                    <strong>SEEKING: ₹10 CRORES</strong>
+                </p>
+                <p style="font-size: 1.3rem; margin: 1rem 0">
+                    <strong>VALUATION: ₹500+ CRORES</strong>
+                </p>
+                <p style="font-size: 1.2rem; margin: 1rem 0">
+                    <strong>TARGET: 5000+ GLOBAL CLINICS</strong>
+                </p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h4><span class="emoji">📱</span> Direct Contact</h4>
+                        <p><strong>+91-09963721999</strong></p>
+                        <p>Available for immediate meetings</p>
+                    </div>
+                    <div class="contact-card">
+                        <h4><span class="emoji">🌐</span> Digital Presence</h4>
+                        <p>www.homahealthcare.in</p>
+                        <p>center.in</p>
+                    </div>
+                    <div class="contact-card">
+                        <h4><span class="emoji">📺</span> Social Media</h4>
+                        <p>YouTube: homasurendranehru</p>
+                        <p>Instagram: homahealthcarecenter</p>
+                    </div>
+                    <div class="contact-card">
+                        <h4><span class="emoji">💬</span> WhatsApp</h4>
+                        <p><strong>+91-09963721999</strong></p>
+                        <p>Quick investor inquiries</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Highlight -->
+            <div class="highlight-box">
+                <h3>
+                    <span class="emoji">🦄</span> WHY THIS IS ONCE-IN-A-LIFETIME
+                    OPPORTUNITY
+                </h3>
+                <p>
+                    Award-winning medical authority + Complete working platform
+                    + Celebrity network + Corporate validation + 20+ years
+                    business success + Global scaling potential =
+                    <strong>UNPRECEDENTED UNICORN OPPORTUNITY</strong>
+                </p>
+                <p style="margin-top: 1rem; font-weight: bold">
+                    <span class="emoji">🚀</span> READY FOR IMMEDIATE INVESTOR
+                    MEETINGS & PLATFORM DEMONSTRATIONS
+                </p>
+            </div>
+
+            <!-- Back to Main Platform -->
+            <div style="text-align: center; margin: 3rem 0">
+                <a
+                    href="/"
+                    style="
+                        background: linear-gradient(45deg, #6366f1, #8b5cf6);
+                        color: white;
+                        padding: 1.2rem 2.5rem;
+                        border-radius: 25px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+                    "
+                >
+                    <span class="emoji">🏥</span> Experience Live Virtual Clinic
+                    Platform
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer
+            style="
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                padding: 2rem;
+                text-align: center;
+                margin-top: 2rem;
+            "
+        >
+            <p style="font-weight: bold; color: #1e40af; margin-bottom: 0.5rem">
+                © 2025 HOMA Healthcare - Complete Health Technology Empire
+            </p>
+            <p style="color: #6b7280">
+                Dr. Muddu Surendra Nehru | 2024 T-HUB Excellence Award Winner |
+                <span class="emoji">📱</span> +91-09963721999
+            </p>
+        </footer>
+    </body>
+</html>
