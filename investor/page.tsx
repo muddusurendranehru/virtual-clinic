@@ -1,327 +1,227 @@
-export default function InvestorPage() {
+import { doctorConfig } from '@/lib/doctorConfig';
+
+export default function InvestorsPage() {
   return (
-    <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dr. Muddu Surendra Nehru - Investment Opportunity</title>
-        <style>{`
-          * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-
-          body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-          }
-
-          .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-          }
-
-          .header h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-          }
-
-          .header p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 0.9;
-          }
-
-          .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-          }
-
-          .section {
-            padding: 60px 0;
-          }
-
-          .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #2c3e50;
-          }
-
-          .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-          }
-
-          .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-          }
-
-          .card:hover {
-            transform: translateY(-5px);
-          }
-
-          .card h3 {
-            color: #667eea;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-          }
-
-          .highlight {
-            background: linear-gradient(135deg, #ff6b6b, #feca57);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            margin: 40px 0;
-          }
-
-          .highlight h3 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-          }
-
-          .cta-section {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-          }
-
-          .cta-button {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin: 10px;
-            transition: background 0.3s ease;
-          }
-
-          .cta-button:hover {
-            background: #5a67d8;
-          }
-
-          .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-          }
-
-          .stat {
-            text-align: center;
-            padding: 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-          }
-
-          .stat h4 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #ffd700;
-          }
-
-          .roadmap {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            margin: 40px 0;
-          }
-
-          .roadmap-item {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-          }
-
-          .roadmap-number {
-            background: #667eea;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            font-weight: bold;
-          }
-        `}</style>
-      </head>
-      <body>
-        <div className="header">
-          <h1>Dr. Muddu Surendra Nehru</h1>
-          <p>
-            Revolutionary Healthcare Investment Opportunity - Scaling Virtual
-            Medical Excellence
-          </p>
-        </div>
-
-        <div className="container">
-          <section className="section">
-            <h2 className="section-title">Investment Highlights</h2>
-            <div className="grid">
-              <div className="card">
-                <h3>🏆 Award-Winning Leadership</h3>
-                <p>
-                  2024 T-HUB Excellence Award Winner with 25+ years of proven
-                  medical expertise and innovation in healthcare delivery.
-                </p>
-              </div>
-              <div className="card">
-                <h3>🔬 Research Pioneer</h3>
-                <p>
-                  First Indian doctor to pioneer HOMA-Insulin Resistance
-                  research, establishing credibility in medical innovation.
-                </p>
-              </div>
-              <div className="card">
-                <h3>📱 Digital Authority</h3>
-                <p>
-                  1500+ doctor followers on YouTube, demonstrating strong
-                  professional network and educational influence.
-                </p>
-              </div>
-              <div className="card">
-                <h3>🤖 AI-Powered Platform</h3>
-                <p>
-                  Complete virtual clinic infrastructure with real-time
-                  payments, automation, and scalable technology.
-                </p>
-              </div>
-              <div className="card">
-                <h3>🌐 Global Network</h3>
-                <p>
-                  Active collaboration with 12 medical colleges and 10+ ICMR
-                  projects, ensuring research and academic backing.
-                </p>
-              </div>
-              <div className="card">
-                <h3>💼 Proven Business Model</h3>
-                <p>
-                  Multiple successful medical establishments with demonstrated
-                  ₹500+ Cr scaling potential.
-                </p>
-              </div>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-6xl mx-auto px-4 py-4">
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-2xl font-bold text-blue-900">{doctorConfig.name}</h1>
+              <p className="text-gray-600">{doctorConfig.title}</p>
             </div>
-          </section>
-
-          <div className="highlight">
-            <h3>Market Opportunity: ₹500+ Crore Scaling Potential</h3>
-            <p>
-              Tapping into India's rapidly growing telemedicine market,
-              projected to reach $5.5 billion by 2025
-            </p>
+            <nav className="hidden md:flex space-x-6">
+              <a href="/" className="text-gray-700 hover:text-blue-900">Home</a>
+              <a href="/services" className="text-gray-700 hover:text-blue-900">Services</a>
+              <a href="/about" className="text-gray-700 hover:text-blue-900">About</a>
+              <a href="/contact" className="text-gray-700 hover:text-blue-900">Contact</a>
+              <a href="/investors" className="text-blue-900 font-semibold">Investors</a>
+            </nav>
           </div>
-
-          <section className="section">
-            <h2 className="section-title">Growth Strategy & Roadmap</h2>
-            <div className="roadmap">
-              <div className="roadmap-item">
-                <div className="roadmap-number">1</div>
-                <div>
-                  <h4>Platform Optimization (Months 1-6)</h4>
-                  <p>
-                    Enhance AI capabilities, improve user experience, integrate
-                    advanced medical technologies
-                  </p>
-                </div>
-              </div>
-              <div className="roadmap-item">
-                <div className="roadmap-number">2</div>
-                <div>
-                  <h4>Market Expansion (Months 6-12)</h4>
-                  <p>
-                    Scale to tier-2 cities, establish partnerships with
-                    healthcare networks, onboard specialist doctors
-                  </p>
-                </div>
-              </div>
-              <div className="roadmap-item">
-                <div className="roadmap-number">3</div>
-                <div>
-                  <h4>Research Integration (Months 12-18)</h4>
-                  <p>
-                    Leverage HOMA-IR research for personalized medicine, develop
-                    proprietary diagnostic tools
-                  </p>
-                </div>
-              </div>
-              <div className="roadmap-item">
-                <div className="roadmap-number">4</div>
-                <div>
-                  <h4>International Expansion (Months 18-24)</h4>
-                  <p>
-                    Enter global markets, establish medical tourism
-                    partnerships, scale technology platform
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="section">
-            <h2 className="section-title">Key Metrics & Projections</h2>
-            <div className="stats">
-              <div className="stat">
-                <h4>₹50L</h4>
-                <p>Current Annual Revenue</p>
-              </div>
-              <div className="stat">
-                <h4>300%</h4>
-                <p>Projected YoY Growth</p>
-              </div>
-              <div className="stat">
-                <h4>₹500Cr</h4>
-                <p>5-Year Market Potential</p>
-              </div>
-              <div className="stat">
-                <h4>1500+</h4>
-                <p>Medical Professional Network</p>
-              </div>
-            </div>
-          </section>
         </div>
+      </header>
 
-        <div className="cta-section">
-          <h2>Ready to Transform Healthcare Together?</h2>
-          <p>
-            Join us in revolutionizing medical care delivery across India and
-            beyond
-          </p>
-          <div style={{ marginTop: "30px" }}>
-            <a href="tel:+91-9876543210" className="cta-button">
-              📞 Schedule Call
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h1 className="text-4xl font-bold mb-4">Investment Opportunity</h1>
+          <p className="text-xl mb-8">Join us in revolutionizing healthcare delivery through virtual medical consultations</p>
+          <div className="bg-white bg-opacity-20 rounded-lg p-6 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-semibold mb-2">Virtual Medical Clinic</h3>
+            <p className="text-lg">Professional healthcare accessible to everyone, anywhere</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Market Opportunity */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Market Opportunity</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-2xl font-bold text-blue-900">₹2.7T</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Indian Healthcare Market</h3>
+              <p className="text-gray-600">Expected to reach ₹2.7 trillion by 2025</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-green-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-2xl font-bold text-green-900">300%</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Telemedicine Growth</h3>
+              <p className="text-gray-600">300% growth in virtual consultations post-2020</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-purple-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <span className="text-2xl font-bold text-purple-900">1.4B</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Market Reach</h3>
+              <p className="text-gray-600">1.4 billion population seeking healthcare access</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Model */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Business Model</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-blue-900">Revenue Streams</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center p-4 bg-white rounded-lg shadow-sm">
+                  <span className="font-medium">General Consultations</span>
+                  <span className="text-green-600 font-bold">₹500 per session</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-white rounded-lg shadow-sm">
+                  <span className="font-medium">Follow-up Visits</span>
+                  <span className="text-green-600 font-bold">₹300 per session</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-white rounded-lg shadow-sm">
+                  <span className="font-medium">Health Checkups</span>
+                  <span className="text-green-600 font-bold">₹800 per session</span>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg border-2 border-blue-200">
+                  <span className="font-medium">Subscription Plans</span>
+                  <span className="text-blue-600 font-bold">Coming Soon</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-blue-900">Competitive Advantages</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span>25+ years of medical expertise with MD certification</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span>Professor-level credentials building trust</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span>Affordable pricing compared to traditional clinics</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span>Modern tech platform with mobile accessibility</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-3">✓</span>
+                  <span>Multi-language support for diverse patient base</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Financial Projections */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Financial Projections</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+              <h4 className="text-lg font-semibold text-blue-900 mb-2">Year 1</h4>
+              <p className="text-3xl font-bold text-blue-900 mb-2">₹12L</p>
+              <p className="text-sm text-gray-600">500 consultations/month</p>
+              <p className="text-sm text-gray-600">Average ₹500 per consultation</p>
+            </div>
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+              <h4 className="text-lg font-semibold text-green-900 mb-2">Year 2</h4>
+              <p className="text-3xl font-bold text-green-900 mb-2">₹30L</p>
+              <p className="text-sm text-gray-600">1,000 consultations/month</p>
+              <p className="text-sm text-gray-600">Subscription plans launched</p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+              <h4 className="text-lg font-semibold text-purple-900 mb-2">Year 3</h4>
+              <p className="text-3xl font-bold text-purple-900 mb-2">₹60L</p>
+              <p className="text-sm text-gray-600">2,000+ consultations/month</p>
+              <p className="text-sm text-gray-600">Multi-doctor platform</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Ask */}
+      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-8">Investment Opportunity</h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 className="text-2xl font-semibold mb-4">Seeking Investment</h3>
+              <p className="text-4xl font-bold mb-2">₹25 Lakhs</p>
+              <p className="text-lg">for platform expansion and marketing</p>
+            </div>
+            <div className="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 className="text-2xl font-semibold mb-4">Equity Offered</h3>
+              <p className="text-4xl font-bold mb-2">15-20%</p>
+              <p className="text-lg">stake in the growing venture</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Use of Funds</h3>
+            <div className="text-left max-w-2xl mx-auto">
+              <div className="flex justify-between py-2 border-b border-white border-opacity-30">
+                <span>Platform Development & Features</span>
+                <span>40%</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-white border-opacity-30">
+                <span>Marketing & Patient Acquisition</span>
+                <span>35%</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-white border-opacity-30">
+                <span>Technology Infrastructure</span>
+                <span>15%</span>
+              </div>
+              <div className="flex justify-between py-2">
+                <span>Working Capital</span>
+                <span>10%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact for Investment */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">Ready to Invest?</h2>
+          <p className="text-lg text-gray-600 mb-8">Join us in transforming healthcare delivery in India</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a 
+              href={`tel:${doctorConfig.contact.phone}`}
+              className="bg-blue-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+            >
+              Call Now
             </a>
-            <a href="mailto:dr.surendra@clinic.com" className="cta-button">
-              📧 Send Proposal
+            <a 
+              href={`mailto:${doctorConfig.contact.email}?subject=Investment Inquiry`}
+              className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+            >
+              Email Us
             </a>
-            <a href="https://wa.me/919876543210" className="cta-button">
-              💬 WhatsApp
+            <a 
+              href={`https://wa.me/${doctorConfig.contact.whatsapp.replace(/[^0-9]/g, '')}?text=Hi, I'm interested in investing in your virtual clinic`}
+              className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+            >
+              WhatsApp
             </a>
           </div>
         </div>
-      </body>
-    </html>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <p className="text-lg font-semibold mb-2">{doctorConfig.name}</p>
+          <p className="text-gray-400 mb-4">{doctorConfig.title}</p>
+          <p className="text-gray-500">© 2025 Virtual Medical Clinic - Investment Opportunity</p>
+        </div>
+      </footer>
+    </div>
   );
 }
